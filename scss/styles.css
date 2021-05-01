@@ -1,0 +1,24 @@
+@import url("http://fonts.cdnfonts.com/css/product-sans");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in the project.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+This file is used to contain all abstracts forwards.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+*//*# sourceMappingURL=styles.css.map */
