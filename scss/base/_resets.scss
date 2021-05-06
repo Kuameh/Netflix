@@ -9,22 +9,24 @@ Files inside this folder can contain global styles used in the project.
   box-sizing: border-box;
 }
 
-// body {
-//   font-family: "Product Sans", sans-serif;
-//   color: white;
-//   background-image: url(/img/stadia/landing.jpg);
-//   // background-image: url(https://www.gstatic.com/stadia/gamers/landing_page/assets/v2_static_hero-trimmed.jpg);
-//   background-color: white;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center center;
-//   background-attachment: fixed;
-//   height: 100vh;
-//   overflow-x: hidden;
-// }
+html {
+  overflow-x: hidden;
+}
+
+body,
+html {
+  background-color: hsl(0, 0%, 0%);
+  color: #f3f3f3;
+  font-size: 16px;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 a {
   text-decoration: none;
+  color: #f3f3f3;
+  cursor: pointer;
 }
 
 li {

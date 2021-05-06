@@ -1,3 +1,54 @@
-// @mixin btn {
+@mixin flex($justify: flex-start, $align: stretch, $x-y: row, $wrap: nowrap) {
+  display: flex;
 
-// }
+  // justify-content
+  @if $justify == "flex-start" {
+    // do nothing
+  } @else {
+    justify-content: $justify;
+  }
+
+  // align-items
+  @if $align == "stretch" {
+    // do nothing
+  } @else {
+    align-items: $align;
+  }
+
+  // flex-direction
+  @if $x-y == "row" {
+    // do nothing
+  } @else {
+    flex-direction: $x-y;
+  }
+
+  // flex-wrap
+  @if $wrap == "nowrap" {
+    // do nothing
+  } @else {
+    flex-wrap: #{$wrap};
+  }
+}
+
+@mixin flex-item($self: auto, $flex: 0 1 auto, $order: 0) {
+  // align-self
+  @if $self == "auto" {
+    // do nothing
+  } @else {
+    align-self: $self;
+  }
+
+  // flex
+  @if $wrap == "nowrap" {
+    // do nothing
+  } @else {
+    flex: $flex;
+  }
+
+  // order
+  @if $order == 0 {
+    // do nothing
+  } @else {
+    order: $order;
+  }
+}

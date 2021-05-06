@@ -1,6 +1,8 @@
-$weight-400: 400;
-$weight-500: 500;
-$clr-gray: #808080;
-$clr-ligth: #e4e4e4;
-$clr-dark-btn: #2a2b2e;
-$clr-orange-dark: #de3334;
+//colors
+$net-red: hsl(357, 92%, 47%);
+$gray-divide: hsl(0, 0%, 13%);
+$gray-faq: hsl(0, 0%, 19%);
+$gray-foot: hsl(0, 0%, 46%);
+
+// flex properties
+$center-flex: "$justify: center; $align: center;";

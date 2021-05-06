@@ -1,2 +1,19 @@
-@import url("http://fonts.cdnfonts.com/css/product-sans");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff")
+      format("woff");
+  font-weight: 400;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff")
+      format("woff");
+  font-weight: 700;
+  font-display: optional;
+}

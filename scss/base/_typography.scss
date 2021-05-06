@@ -7,3 +7,38 @@
 // sub {
 //   font-size: 0.7rem;
 // }
+
+body,
+html {
+  font-family: "Netflix Sans", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.hero-txt {
+  h1 {
+    max-width: 20ch;
+  }
+
+  h2 {
+    margin: 0.4rem 0 2rem 0;
+  }
+}
+
+#enjoy {
+  h1 {
+    white-space: nowrap;
+  }
+  h2 {
+    margin: 20px 0 0 0;
+  }
+}

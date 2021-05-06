@@ -1,5 +1,3 @@
-@import url("http://fonts.cdnfonts.com/css/product-sans");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
@@ -10,15 +8,164 @@ Files inside this folder can contain global styles used in the project.
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body,
+html {
+  background-color: black;
+  color: #f3f3f3;
+  font-size: 16px;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 a {
   text-decoration: none;
+  color: #f3f3f3;
+  cursor: pointer;
 }
 
 li {
   list-style: none;
 }
 
+body,
+html {
+  font-family: "Netflix Sans", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.hero-txt h1 {
+  max-width: 20ch;
+}
+.hero-txt h2 {
+  margin: 0.4rem 0 2rem 0;
+}
+
+#enjoy h1 {
+  white-space: nowrap;
+}
+#enjoy h2 {
+  margin: 20px 0 0 0;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2") format("woff2"), url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff") format("woff");
+  font-weight: 400;
+  font-display: optional;
+}
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2") format("woff2"), url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff") format("woff");
+  font-weight: 700;
+  font-display: optional;
+}
 /*
 This file is used to contain all abstracts forwards.
 Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
-*//*# sourceMappingURL=styles.css.map */
+*/
+/*****************************Components********************************/
+.btn {
+  background-color: #e60a15;
+  border-radius: 3px;
+  padding: 7px 17px;
+  font-style: 1rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.btn > a[href="www.netflix.com/login"] {
+  margin-left: auto;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+}
+header .logo svg {
+  fill: #e60a15;
+  width: clamp(80px, 15vw, 167px);
+}
+
+section {
+  padding: 70px 0;
+  border-bottom: 8px solid #212121;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.heads {
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+/****************************Layouts*******************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+
+/****************************Main CSS*******************************/
+.hero-txt {
+  background-image: url("/assets/image/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-txt .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 65vh;
+  padding: 100px 0 0 0;
+}
+
+#enjoy .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#enjoy .anim-enjoy {
+  margin: 0 auto;
+  width: 50%;
+}
+#enjoy .anim-enjoy-container {
+  position: relative;
+}
+#enjoy img {
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#enjoy video {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}/*# sourceMappingURL=styles.css.map */

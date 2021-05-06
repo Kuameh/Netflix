@@ -1,0 +1,29 @@
+@forward 'buttons';
+@forward 'inputs';
+@forward 'modals';
+@use "../abstracts/_abstracts-dir" as a;
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+
+  .logo svg {
+    fill: a.$net-red;
+    width: clamp(80px, 15vw, 167px);
+  }
+}
+
+section {
+  padding: 70px 0;
+  border-bottom: 8px solid a.$gray-divide;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.heads {
+  max-width: 50ch;
+  margin: 0 auto;
+}

@@ -1,17 +1,65 @@
 @charset 'utf-8';
 // https://matthewelsom.com/blog/simple-scss-playbook.html
+@use 'sass:string';
+@use 'sass:meta';
 
 //Vendor
 @use "vendor/_vendor-dir";
 
-//Base Styles`
+//Base Styles
 @use "base/_base-dir";
 
 //Abstracts
-@use "abstracts/_abstracts-dir";
+@use "abstracts/_abstracts-dir" as a;
 
 //Components
 @use "components/_components-dir";
 
 //Layout
 @use "layouts/_layouts-dir";
+
+/****************************Main CSS*******************************/
+
+.hero-txt {
+  background-image: url("/assets/image/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+
+  .cta {
+    @include a.flex(center, center, column);
+    text-align: center;
+    height: 65vh;
+    padding: 100px 0 0 0;
+  }
+}
+
+#enjoy {
+  .container {
+    @include a.flex(center, center);
+    gap: 10px;
+  }
+
+  .anim-enjoy {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .anim-enjoy-container {
+    position: relative;
+  }
+  img {
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  video {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+  }
+}

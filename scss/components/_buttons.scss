@@ -1,0 +1,15 @@
+/*****************************Components********************************/
+@use "../abstracts/_abstracts-dir" as a;
+
+.btn {
+  background-color: a.$net-red;
+  border-radius: 3px;
+  padding: 7px 17px;
+  font-style: 1rem;
+  font-weight: 400;
+  white-space: nowrap;
+
+  > a[href="www.netflix.com/login"] {
+    margin-left: auto;
+  }
+}
